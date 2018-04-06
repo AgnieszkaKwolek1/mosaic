@@ -4,7 +4,7 @@ body {
 
 .main {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 5px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   height: 100vh;
@@ -24,7 +24,7 @@ body {
 }
 
 .four {
-  background-color: #ff0000;
+  background-color: #dd0000;
 }
 
 .main > div {
@@ -32,4 +32,13 @@ body {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    display: block;
+  }
+  .main > div {
+    height: 200px;
+  }
 }
